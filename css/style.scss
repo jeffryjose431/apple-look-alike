@@ -166,11 +166,11 @@ header {
   background: url(images/hero/watch/logo_watch_large.png) center no-repeat;
   background-size: 20.7rem 7.8rem;
 }
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
 
 .collection {
   display: flex;
@@ -321,19 +321,58 @@ header {
   }
 }
 
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
 
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+
+footer {
+  font-size: 1.2rem;
+  line-height: 1.33337;
+  font-weight: 300;
+  //   letter-spacing: -0.12px;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+  .first-content {
+    padding: 1.7rem 0 1.1rem;
+    color: #86868b;
+    border-bottom: 1px solid #d2d2d7;
+  }
+  .footer-list {
+    list-style: none;
+    &-item {
+      padding-bottom: 9.6px;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #515154;
+
+        &:hover {
+          color: #1d1d1f;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
 @media screen and (max-width: 1068px) {
   .hero {
     --content-height: 65rem;
@@ -635,17 +674,17 @@ header {
     }
 
     .flex-cta {
-        margin-top: 1.26rem;
-        &-link {
-          font-size: 1.7rem;
-          &:nth-child(2) {
-            margin-left: 2.6rem;
-          }
-          span {
-            padding-left: 6px;
-            font-size: 1.3rem;
-          }
+      margin-top: 1.26rem;
+      &-link {
+        font-size: 1.7rem;
+        &:nth-child(2) {
+          margin-left: 2.6rem;
+        }
+        span {
+          padding-left: 6px;
+          font-size: 1.3rem;
         }
       }
+    }
   }
 }

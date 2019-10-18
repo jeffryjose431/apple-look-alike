@@ -171,11 +171,11 @@ header .nav-link-bag {
   background-size: 20.7rem 7.8rem;
 }
 
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
 .collection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,18 +344,60 @@ header .nav-link-bag {
   margin: 13.6px 0 57px;
 }
 
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
-/************ MEDIA ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+footer {
+  font-size: 1.2rem;
+  line-height: 1.33337;
+  font-weight: 300;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+footer .container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+footer .first-content {
+  padding: 1.7rem 0 1.1rem;
+  color: #86868b;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+footer .footer-list {
+  list-style: none;
+}
+
+footer .footer-list-item {
+  padding-bottom: 9.6px;
+}
+
+footer .footer-list-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: #515154;
+}
+
+footer .footer-list-item a:hover {
+  color: #1d1d1f;
+  text-decoration: underline;
+}
+
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
+/************ COLLECTION ************/
 @media screen and (max-width: 1068px) {
   .hero {
     --content-height: 65rem;
