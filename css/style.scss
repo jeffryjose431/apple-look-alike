@@ -16,6 +16,7 @@ a {
   display: block;
 }
 
+/************ NAV ************/
 header {
   width: 100%;
   height: 4.4rem;
@@ -65,6 +66,305 @@ header {
 
   .nav-link-bag {
     background: url(images/icons/bag.svg) center no-repeat;
+  }
+}
+
+/************ SECTION ************/
+
+.hero {
+  --content-height: 69.2rem;
+  --content-padding: 0rem;
+  --content-border: 0rem;
+  height: calc(
+    var(--content-height) + var(--content-border) + var(--content-padding)
+  );
+  // height: 69.2rem;
+  //   background-size: auto 74.8rem;
+  //   background-size: auto cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid #fff;
+  border-bottom: 0.6rem solid #fff;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 5.5rem;
+
+  &-heading {
+    font-size: 5.6rem;
+    line-height: 1.07143;
+    letter-spacing: -0.005rem;
+    font-weight: 500;
+  }
+  &-sub-heading {
+    font-size: 2.65rem;
+    margin-top: 0.6rem;
+    letter-spacing: 0.008rem;
+    font-weight: 300;
+  }
+  &-price {
+    font-size: 1.7rem;
+    color: #888;
+    margin-top: 0.68rem;
+  }
+}
+.title-dark {
+  color: #000;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+  &-link {
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+
+    &:nth-child(2) {
+      margin-left: 2.6rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.cta {
+  &-link-darker {
+    color: #0070c9;
+  }
+}
+
+/************ IPHONE - 11 - PRO ************/
+
+.iphone-11-pro {
+  background-image: url(images/hero/iphone-11-pro/iphone-11-pro-large.jpg);
+  padding-top: 4.4rem;
+  border-top: none;
+  --content-padding: 4.4rem;
+  --content-border: 0.6rem;
+}
+
+/************ IPHONE - 11 - PRO ************/
+
+.iphone-11 {
+  background-image: url(images/hero/iphone-11/iphone11large.jpg);
+  --content-border: 1.2rem;
+}
+
+/************ WATCH************/
+
+.watch {
+  background-image: url(images/hero/watch/watch-5-large.jpg);
+  --content-border: 1.2rem;
+}
+
+.title-heading-watch {
+  height: 7.8rem;
+  background: url(images/hero/watch/logo_watch_large.png) center no-repeat;
+  background-size: 20.7rem 7.8rem;
+}
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: tomato;
+
+  section {
+    flex-basis: 50%;
+    height: 58rem;
+    border-style: solid;
+    border-color: #fff;
+    border-top-width: 6px;
+    border-bottom-style: 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:nth-child(odd) {
+      border-left-width: 12px;
+      border-right-width: 6px;
+    }
+    &:nth-child(even) {
+      border-left-width: 6px;
+      border-right-width: 12px;
+    }
+  }
+
+  .apple-watch-studio {
+    background-image: url(images/hero/watchseries-card/watch-series-large.jpg);
+  }
+
+  .ipad-studio {
+    background-image: url(images/hero/ipad-card/ipad-large.jpg);
+  }
+
+  .tv {
+    background-image: url(images/hero/tv-card/tv-monster-large.jpg);
+  }
+  .credit-card {
+    background-image: url(images/hero/applecard-card/card-large.jpg);
+  }
+  .arcade {
+    background-image: url(images/hero/arcade-card/arcade-large.jpg);
+  }
+  .macbook {
+    background-image: url(images/hero/macbook-pro-card/macbook-pro-large.jpg);
+  }
+
+  .flex-title {
+    text-align: center;
+    color: rgb(17, 17, 17);
+
+    &-heading {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-top: 52px;
+    }
+
+    &-sub-heading {
+      font-size: 2.1rem;
+      font-weight: 300;
+      margin-top: 6px;
+      width: 88%;
+      max-width: 430px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-white {
+      color: #fff;
+    }
+    &-heading-ipad {
+      height: 5.8rem;
+      background: url(images/hero/ipad-card/ipad-medium-logo.png) center
+        no-repeat;
+      background-size: 76px 58px;
+      margin-top: 3.3rem;
+    }
+    &-heading-card {
+      height: 3.2rem;
+      background: url(images/hero/applecard-card/card-medium-logo.png) center
+        no-repeat;
+      background-size: 236px 32px;
+      margin-top: 5.6rem;
+    }
+
+    &-heading-arcade {
+      height: 3.6rem;
+      background: url(images/hero/arcade-card/arcade-medium-logo.png) center
+        no-repeat;
+      background-size: 152px 36px;
+      margin-top: 5.5rem;
+    }
+
+    &-heading-tv {
+      height: 3.1rem;
+      background: url(images/hero/tv-card/tv-monster-medium-logo.png) center
+        no-repeat;
+      background-size: 81px 31px;
+      margin-top: 5.7rem;
+    }
+
+    &-sub-heading-tv {
+      height: 5.5rem;
+      background: url(images/hero/tv-card/tv-monster-medium-logo-down.png)
+        center no-repeat;
+      background-size: 190px 55px;
+      margin-top: 0.4rem;
+    }
+  }
+
+  .flex-cta {
+    text-align: center;
+    margin-top: 1.26rem;
+    &-link {
+      font-size: 1.7rem;
+      font-weight: 200;
+      color: #0070c9;
+      display: inline-block;
+      &:nth-child(2) {
+        margin-left: 2.6rem;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &-white {
+        color: #fff;
+      }
+      span {
+        position: relative;
+        padding-left: 6px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .tv {
+    .container {
+      height: 100%;
+    }
+    .flex-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .sub-flex-title {
+      margin: 13.6px 0 57px;
+    }
+  }
+}
+
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+
+@media screen and (max-width: 1068px) {
+  .hero {
+    --content-height: 65rem;
+    background-position: bottom center;
+  }
+  .iphone-11-pro {
+    background-image: url(images/hero/iphone-11-pro/iphone-11-pro-medium.jpg);
+  }
+  .iphone-11 {
+    background-image: url(images/hero/iphone-11/iphone11-medium.jpg);
+  }
+
+  .watch {
+    background-image: url(images/hero/watch/watch-5-medium.jpg);
+  }
+
+  .title {
+    &-heading {
+      font-size: 4.4rem;
+    }
+    &-sub-heading {
+      font-size: 2.4rem;
+    }
+  }
+  .title-heading-watch {
+    height: 6.2rem;
+    background-image: url(images/hero/watch/logo_watch_large.png);
+    background-size: 16.3rem 6.2rem;
+  }
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
   }
 }
 
@@ -201,5 +501,151 @@ header {
         opacity: 1;
       }
     }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .hero {
+    --content-height: 50rem;
+  }
+  .iphone-11-pro {
+    background-image: url(images/hero/iphone-11-pro/iphone-11-pro-small.jpg);
+  }
+  .iphone-11 {
+    background-image: url(images/hero/iphone-11/iphone11-small.jpg);
+  }
+
+  .watch {
+    background-image: url(images/hero/watch/watch-5-small.jpg);
+    h3 {
+      line-height: 2.7rem;
+    }
+  }
+
+  .title {
+    padding-top: 3.7rem;
+    &-heading {
+      font-size: 3.2rem;
+    }
+    &-sub-heading {
+      font-size: 1.9rem;
+    }
+    &-price {
+      font-size: 1.4rem;
+    }
+  }
+  .title-heading-watch {
+    margin-top: -0.5rem;
+  }
+  .cta {
+    margin-top: 0.7rem;
+    &-link {
+      font-size: 1.9rem;
+    }
+  }
+
+  .collection {
+    section {
+      flex-basis: 100%;
+      height: 51.2rem;
+      border-width: 6px 0;
+      &:nth-child(odd) {
+        border-left-width: 0px;
+        border-right-width: 0px;
+      }
+      &:nth-child(even) {
+        border-left-width: 0px;
+        border-right-width: 0px;
+      }
+    }
+    .apple-watch-studio {
+      background-image: url(images/hero/watchseries-card/watch-series-small.jpg);
+
+      h5 {
+        width: 20.2rem;
+      }
+    }
+
+    .ipad-studio {
+      background-image: url(images/hero/ipad-card/ipad-small.jpg);
+    }
+
+    .tv {
+      background-image: url(images/hero/tv-card/tv-monster-large.jpg);
+    }
+    .credit-card {
+      background-image: url(images/hero/applecard-card/card-small.jpg);
+      h5 {
+        max-width: 35rem;
+      }
+    }
+    .arcade {
+      background-image: url(images/hero/arcade-card/arcade-small.jpg);
+    }
+    .macbook {
+      background-image: url(images/hero/macbook-pro-card/macbook-pro-small.jpg);
+    }
+
+    .flex-title {
+      &-heading {
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-top: 3.7rem;
+      }
+
+      &-sub-heading {
+        font-size: 1.9rem;
+        margin-top: 9px;
+      }
+
+      &-heading-ipad {
+        height: 5.8rem;
+        background: url(images/hero/ipad-card/ipad-medium-logo.png) center
+          no-repeat;
+        background-size: 76px 58px;
+        margin-top: 3.3rem;
+      }
+      &-heading-card {
+        height: 2.6rem;
+        background-size: 19.7rem 2.6rem;
+        margin-top: 4.1rem;
+      }
+
+      &-heading-arcade {
+        height: 3rem;
+        background-size: 12.7rem 3rem;
+        margin-top: 4.1rem;
+      }
+
+      &-heading-tv {
+        height: 2.6rem;
+        background-size: 5.9rem 2.6rem;
+        margin-top: 4.5rem;
+      }
+
+      &-sub-heading-tv {
+        height: 4.9rem;
+        background-size: 15.8rem 4.9rem;
+      }
+    }
+    .tv {
+      .sub-flex-title {
+        margin: 1.36rem 0 3.5rem;
+      }
+    }
+
+    .flex-cta {
+        margin-top: 1.26rem;
+        &-link {
+          font-size: 1.7rem;
+          &:nth-child(2) {
+            margin-left: 2.6rem;
+          }
+          span {
+            padding-left: 6px;
+            font-size: 1.3rem;
+          }
+        }
+      }
   }
 }
