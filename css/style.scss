@@ -337,7 +337,7 @@ footer {
   font-size: 1.2rem;
   line-height: 1.33337;
   font-weight: 300;
-  //   letter-spacing: -0.12px;
+  // letter-spacing: -0.12px;
   background-color: #f5f5f7;
   color: #1d1d1f;
   .container {
@@ -345,6 +345,7 @@ footer {
     margin: 0 auto;
     padding: 0 2.2rem;
   }
+  /************ FIRST CONTENT ************/
   .first-content {
     padding: 1.7rem 0 1.1rem;
     color: #86868b;
@@ -366,7 +367,7 @@ footer {
       }
     }
   }
-
+  /************ SECOND CONTENT ************/
   .second-content {
     padding-top: 2rem;
     display: flex;
@@ -393,13 +394,90 @@ footer {
     margin-right: 2rem;
     margin-bottom: 0.96rem;
   }
+
+  .toggle-box {
+    display: none;
+  }
+  /************ THRID CONTENT ************/
+  .third-content {
+    letter-spacing: 0;
+    padding: 17px 0 21px;
+    padding-top: 34px;
+    color: #86868b;
+  }
+  .footer-shop {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+    margin-bottom: 7px;
+    a {
+      display: inline-block;
+      color: #06c;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-legal {
+    display: flex;
+  }
+
+  .footer-legal-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // top: -5px;
+    a {
+      display: inline-block;
+      color: #515154;
+      text-decoration: none;
+      padding-right: 10px;
+      margin-right: 7px;
+
+      &:not(:last-of-type) {
+        border-right: 1px solid #d2d2d7;
+      }
+      &:hover {
+        color: #1d1d1f;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-locale {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      display: flex;
+      color: #515154;
+      text-decoration: none;
+      &:hover {
+        color: #1d1d1f;
+        text-decoration: underline;
+      }
+    }
+    span {
+      text-align: center;
+      width: 16px;
+      height: 16px;
+      background-image: url(images/icons/USA-flag.png);
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
 }
 
-/************ COLLECTION ************/
-/************ COLLECTION ************/
-/************ COLLECTION ************/
-/************ COLLECTION ************/
-/************ COLLECTION ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
+/************ MEDIA ************/
 @media screen and (max-width: 1068px) {
   .hero {
     --content-height: 65rem;
@@ -575,14 +653,9 @@ footer {
   /************ FOOTER ************/
   /************ FOOTER ************/
   footer {
+    /************ SECOND CONTENT ************/
     .second-content {
       flex-direction: column;
-
-      // .footer-list-item {
-      //   &:last-child {
-      //     padding-bottom: 0;
-      //   }
-      // }
     }
     .sub-content {
       flex-basis: auto;
@@ -651,6 +724,34 @@ footer {
       &:checked ~ label h3::after {
         transform: rotate(45deg) scale(1.08);
       }
+    }
+
+    /************ THRID CONTENT ************/
+
+    .third-content {
+      padding-top: 17px;
+    }
+    .footer-shop {
+      padding-bottom: 8px;
+      margin-bottom: 7px;
+      border: none;
+    }
+    .footer-legal {
+      flex-direction: column;
+    }
+    .footer-legal-copyright {
+      margin-bottom: 0.8rem;
+    }
+    .footer-legal-links {
+      flex-grow: 0;
+      justify-content: flex-start;
+    }
+
+    .footer-locale {
+      order: -1;
+      flex-grow: 0;
+      justify-content: flex-start;
+      margin-bottom: 1.5rem;
     }
   }
 }
