@@ -341,9 +341,9 @@ footer {
   background-color: #f5f5f7;
   color: #1d1d1f;
   .container {
-    max-width: 980px;
+    max-width: 98rem;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 2.2rem;
   }
   .first-content {
     padding: 1.7rem 0 1.1rem;
@@ -353,7 +353,7 @@ footer {
   .footer-list {
     list-style: none;
     &-item {
-      padding-bottom: 9.6px;
+      padding-bottom: 0.96rem;
       a {
         display: inline-block;
         text-decoration: none;
@@ -365,6 +365,33 @@ footer {
         }
       }
     }
+  }
+
+  .second-content {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .footer-list-item {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .sub-content {
+    flex-basis: 25%;
+    &-section {
+      & ~ .sub-content-section {
+        padding-top: 24px;
+      }
+    }
+  }
+
+  label h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    margin-bottom: 0.96rem;
   }
 }
 
@@ -538,6 +565,91 @@ footer {
       }
       to {
         opacity: 1;
+      }
+    }
+  }
+
+  /************ FOOTER ************/
+  /************ FOOTER ************/
+  /************ FOOTER ************/
+  /************ FOOTER ************/
+  /************ FOOTER ************/
+  footer {
+    .second-content {
+      flex-direction: column;
+
+      // .footer-list-item {
+      //   &:last-child {
+      //     padding-bottom: 0;
+      //   }
+      // }
+    }
+    .sub-content {
+      flex-basis: auto;
+      //   background-color: violet;
+      &-section {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        // pointer-events: auto;
+        border-bottom: 1px solid #d2d2d7;
+        & ~ .sub-content-section {
+          padding-top: 0;
+        }
+      }
+
+      .footer-list {
+        visibility: hidden;
+        margin: 0;
+        overflow: hidden;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        transform: translateY(-100px);
+        &-item {
+          padding-bottom: 0;
+          a {
+            display: block;
+            padding: 0.6rem 1.4rem;
+          }
+        }
+      }
+    }
+
+    label h3 {
+      position: relative;
+      font-weight: 400;
+      margin: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      z-index: 2;
+      background-color: #f5f5f7;
+
+      &::after {
+        content: "+";
+        float: right;
+        font-size: 1.4rem;
+        margin-top: -2px;
+        margin-right: 0.8rem;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      }
+    }
+
+    .toggle-box {
+      display: none;
+      &:checked ~ label ~ .footer-list {
+        position: static;
+        visibility: visible;
+        z-index: 1;
+        transform: none;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+      }
+      &:checked ~ label h3::after {
+        transform: rotate(45deg) scale(1.08);
       }
     }
   }
