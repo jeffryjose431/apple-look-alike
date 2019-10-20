@@ -334,6 +334,7 @@ header {
 /************ COLLECTION ************/
 
 footer {
+  border-top: 6px solid #fff;
   font-size: 1.2rem;
   line-height: 1.33337;
   font-weight: 300;
@@ -740,11 +741,16 @@ footer {
       flex-direction: column;
     }
     .footer-legal-copyright {
-      margin-bottom: 0.8rem;
+      // margin-bottom: 0.8rem;
     }
     .footer-legal-links {
       flex-grow: 0;
       justify-content: flex-start;
+      flex-wrap: wrap;
+      // background: brown;
+      a {
+        margin-top: 5px;
+      }
     }
 
     .footer-locale {
